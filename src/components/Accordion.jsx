@@ -10,13 +10,12 @@ function Accordion({ title, text }) {
   return (
     <article>
       <div className='flex justify-between items-center mb-4'>
-        <h2
-          role='button'
-          className='font-semibold text-md flex-5/6 hover:cursor-pointer hover:text-purple-500'
+        <button
+          className='font-semibold text-md text-start flex-5/6 hover:cursor-pointer hover:text-purple-500'
           onClick={handleClick}
         >
-          {title}
-        </h2>
+          <h2>{title}</h2>
+        </button>
         <button
           type='button'
           onClick={handleClick}
